@@ -8,7 +8,7 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.hololo.app.dnschanger.dnschanger.MainActivity">
+    tools:context="com.sammynett.app.dnschanger.dnschanger.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
@@ -39,7 +39,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <com.hololo.app.dnschanger.utils.ui.BehaviorScrollView
+    <com.sammynett.app.dnschanger.utils.ui.BehaviorScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
@@ -130,7 +130,7 @@
 
         </FrameLayout>
 
-    </com.hololo.app.dnschanger.utils.ui.BehaviorScrollView>
+    </com.sammynett.app.dnschanger.utils.ui.BehaviorScrollView>
 
     <ImageView
         android:id="@+id/logo"

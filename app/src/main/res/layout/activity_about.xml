@@ -7,7 +7,7 @@
     android:background="@color/colorWhite"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="com.hololo.app.dnschanger.about.AboutActivity">
+    tools:context="com.sammynett.app.dnschanger.about.AboutActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
