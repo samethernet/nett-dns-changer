@@ -33,37 +33,6 @@ android {
     }
 }
 
-def Properties props = new Properties()
-def propFile = new File("${project.rootDir}/app/signing.properties")
-if (propFile.canRead()) {
-    props.load(new FileInputStream(propFile))
-
-    if (props != null
-            && props.containsKey("KEYSTORE_FILE")
-            && props.containsKey("KEYSTORE_PASSWORD")
-            && props.containsKey("KEY_ALIAS")
-            && props.containsKey("KEY_PASSWORD")) {
-
-        def keystoreFilePath = "${project.rootDir}" + props["KEYSTORE_FILE"]
-        def keystoreFile = new File(keystoreFilePath)
-        if (keystoreFile.canRead()) {
-            android.signingConfigs.release.storeFile = keystoreFile
-            android.signingConfigs.release.storePassword = props["KEYSTORE_PASSWORD"]
-            android.signingConfigs.release.keyAlias = props["KEY_ALIAS"]
-            android.signingConfigs.release.keyPassword = props["KEY_PASSWORD"]
-        } else {
-            println("keystore file not found: " + keystoreFilePath)
-            android.buildTypes.release.signingConfig = null
-        }
-    } else {
-        println("signing.properties found but some entries missing")
-        android.buildTypes.release.signingConfig = null
-    }
-} else {
-    println("signing.properties not found")
-    android.buildTypes.release.signingConfig = null
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
