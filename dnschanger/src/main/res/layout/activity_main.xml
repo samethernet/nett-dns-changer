@@ -8,7 +8,7 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="com.sammynett.dnschanger.dnschanger.MainActivity">
+    tools:context="com.sammynett.dnschanger.dns.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"

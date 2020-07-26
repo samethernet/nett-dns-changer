@@ -1,4 +1,4 @@
-package com.sammynett.dnschanger.dnschanger;
+package com.sammynett.dnschanger.dns;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -15,7 +15,7 @@ import javax.inject.Inject;
 
 import io.reactivex.functions.Consumer;
 
-import static com.sammynett.dnschanger.dnschanger.DNSService.DNS_MODEL;
+import static com.sammynett.dnschanger.dns.DNSService.DNS_MODEL;
 
 class DNSPresenter {
 

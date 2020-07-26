@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.sammynett.dnschanger.dnschanger.MainActivity">
+        <activity android:name="com.sammynett.dnschanger.dns.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,7 @@
         </activity>
 
         <service
-            android:name="com.sammynett.dnschanger.dnschanger.DNSService"
+            android:name="com.sammynett.dnschanger.dns.DNSService"
             android:permission="android.permission.BIND_VPN_SERVICE" />
 
         <activity android:name="com.sammynett.dnschanger.about.AboutActivity" />
@@ -32,7 +32,7 @@
             android:name="com.sammynett.dnschanger.settings.SettingsActivity"
             android:theme="@style/AppTheme.ActionBar" />
 
-        <receiver android:name="com.sammynett.dnschanger.dnschanger.BootReceiver">
+        <receiver android:name="com.sammynett.dnschanger.dns.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>

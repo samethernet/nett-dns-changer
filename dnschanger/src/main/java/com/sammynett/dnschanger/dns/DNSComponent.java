@@ -1,4 +1,4 @@
-package com.sammynett.dnschanger.dnschanger;
+package com.sammynett.dnschanger.dns;
 
 import com.sammynett.dnschanger.di.component.ApplicationComponent;
 import com.sammynett.dnschanger.di.scope.ActivityScope;

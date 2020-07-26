@@ -1,4 +1,4 @@
-package com.sammynett.dnschanger.dnschanger;
+package com.sammynett.dnschanger.dns;
 
 import android.app.NotificationManager;
 import android.content.Context;
@@ -46,7 +46,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import static com.sammynett.dnschanger.dnschanger.DNSPresenter.SERVICE_OPEN;
+import static com.sammynett.dnschanger.dns.DNSPresenter.SERVICE_OPEN;
 
 public class MainActivity extends AppCompatActivity implements IDNSView, DialogInterface.OnClickListener {
 

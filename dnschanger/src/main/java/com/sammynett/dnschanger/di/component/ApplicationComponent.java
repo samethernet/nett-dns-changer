@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import com.google.gson.Gson;
 import com.sammynett.dnschanger.DNSChangerApp;
 import com.sammynett.dnschanger.di.module.ApplicationModule;
-import com.sammynett.dnschanger.dnschanger.DNSService;
+import com.sammynett.dnschanger.dns.DNSService;
 import com.sammynett.dnschanger.utils.RxBus;
 
 import javax.inject.Singleton;

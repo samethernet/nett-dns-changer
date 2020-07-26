@@ -1,4 +1,4 @@
-package com.sammynett.dnschanger.dnschanger;
+package com.sammynett.dnschanger.dns;
 
 import android.app.Service;
 import android.content.Context;
